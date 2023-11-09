@@ -1,0 +1,42 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1d1e22;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuLogo {
+    height: 100px;
+    width: 200px;
+}
+
+.menuButton {
+    display: inline;
+}
+
+.painelImage {
+    margin: -132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.painelImage img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
