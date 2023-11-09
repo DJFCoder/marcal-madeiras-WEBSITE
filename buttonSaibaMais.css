@@ -30,7 +30,7 @@ button.learn-more .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #282936;
+  background: #dedede;
   border-radius: 1.625rem;
 }
 button.learn-more .circle .icon {
@@ -39,7 +39,7 @@ button.learn-more .circle .icon {
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #fff;
+  background: #1f1f1f;
 }
 button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -55,8 +55,8 @@ button.learn-more .circle .icon.arrow::before {
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
+  border-top: 0.125rem solid #1f1f1f;
+  border-right: 0.125rem solid #1f1f1f;
   transform: rotate(45deg);
 }
 button.learn-more .button-text {
@@ -78,11 +78,11 @@ button:hover .circle {
   width: 100%;
 }
 button:hover .circle .icon.arrow {
-  background: #fff;
+  background: #1f1f1f;
   transform: translate(1rem, 0);
 }
 button:hover .button-text {
-  color: #fff;
+  color: #1f1f1f;
 }
 
 @supports (display: grid) {
