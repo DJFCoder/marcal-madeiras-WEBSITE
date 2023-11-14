@@ -13,22 +13,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Marçal Madeiras</title>
 </head>
-<body>
-        <nav class="menu" id="home">
-            <a href="#" id="scrollToTop">
-                <img src="./img/logoColor.png" class="menuLogo"/>
-            </a>
 
-            <ul class="menuButton">
-                <il><a href="#">Home</a></il>
-                <il><a href="#">Sobre</a></il>
-                <il><a href="#">Produtos</a></il>
-                <il><a href="#">Contato</a></il>
-            </ul>
-        </nav>
+<body>
+    
+    <div class="menu" id="home">
+        <a href="#" id="scrollToTop">
+            <img src="./img/logoColor.png" class="menuLogo"/>
+        </a>
+    
+        <ul class="menuButton">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    
+        <div class="phone-menu">
+            <div class="container">
+                <div class="phone">
+                    <div class="content">
+    
+                        <nav role="navigation">
+                            <div id="menuToggle">
+                                <input type="checkbox" />
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul id="menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Info</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 
         <div class="painelImage">
-            <img src="./img/gallery/faixada.jpg" style="max-height: 720px;">
+            <img src="./img/gallery/faixada.jpg" width="100%">
         </div>
 
         <div class="about">
@@ -48,6 +74,32 @@
             <a href="#" id="scrollToTop">
                 <img src="./img/LogoWhite.png" class="aboutLogo">
             </a>
+        </div>
+
+        <div class="image-gallery">
+            <div class="gallery-item">
+                <img src="./img/gallery/portaDeEntrada.jpg" onclick="openModal(this);">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/gallery/venezianaGuilhotina.jpg" onclick="openModal(this);">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/gallery/capelinhas.jpg" onclick="openModal(this);">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/gallery/portaTorneada.jpg" onclick="openModal(this);">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/gallery/portaVenezianaEJorge.jpg" onclick="openModal(this);">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/gallery/portaCouro.jpg" onclick="openModal(this);">
+            </div>
+        </div>
+        
+        <div id="myModal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
         </div>
     
 </body>
