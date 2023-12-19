@@ -18,22 +18,28 @@ body {
     --color4: #a84c06;
     --color5: #ffdf29;
     --color6: #383838;
-    background-color: #222222;
+    --color7: #222222;
+    --color8: #d7d7d7;
+    background-color: var(--color7);
     display: flex;
     flex-direction: column;
+}
+
+.bg-dark {
+    background-color: var(--color7); !important
 }
 
 .nav-bar {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
     background-color: var(--color2);
     list-style: none;
     position: fixed;
     top: 0;
     z-index: 100;
-    padding: 12px 20px;
+    padding: 1rem 4rem;
     clear: both;
 }
 
@@ -42,10 +48,12 @@ body {
 }
 .menu {
     display: flex;
+    align-items: center;
 }
 
 .menu li {
-    padding-left: 30px;
+    display: flex;
+    padding: 0 15px;
 }
 
 .menu li a {
@@ -104,13 +112,45 @@ body {
 }
 
 .displayImg {
-    height: 100vh;
-    height: 100dvh;
-    background: url('./img/gallery/jpg/display.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 5.6rem 0 0 0;
+}
+
+.displayImg img {
+    width: 100%;
+}
+
+.albumDisplay img {
+    margin-top: 5.9rem;
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 65%;
+}
+
+.albumBg {
+    padding: 2rem 2rem;
+}
+
+.containerGalery {
+    mix-width: 50%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    max-width: 350px;
+    height: 350px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.gallery a:hover {
+    transform: scale(0.9);
 }
 
 .aboutUs {
@@ -176,7 +216,7 @@ body {
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .modal {
@@ -238,6 +278,7 @@ footer {
 
 .social a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .social a i {
@@ -276,8 +317,52 @@ footer {
     transform: scale(1.2);
 }
 
+.aboutUsContent {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color6);
+}
+
+.logoAbout img {
+    margin: 5.9rem auto 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 25rem;
+}
+
+.map {
+    display: flex;
+    padding: 2rem 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.map iframe {
+    max-width: 100%;
+    width: 100dvh;
+    height: 450px;
+    border: solid 0.3rem var(--color5);
+    box-shadow: -13px 13px 15px -3px rgba(0, 0, 0, 0.9);
+    border-radius: 1rem;
+}
+
+.contact {
+    margin: 5.9rem auto 0;
+}
 
 @media only screen and (max-width: 768px) {
+    .nav-bar {
+        justify-content: center;
+        padding: 1rem 0;
+    }
     .menu {
         flex-direction: column;
         align-items: center;
@@ -303,6 +388,10 @@ footer {
     }
     #check:checked ~ .menu {
         right: 0;
+    }
+    .albumDisplay img {
+        max-height: 250px;
+        object-position: 50% 65%;
     }
     .aboutUs {
         flex-direction: column;
