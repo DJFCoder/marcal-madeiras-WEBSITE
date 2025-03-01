@@ -34,7 +34,7 @@ marcalMadeiras/
 ├── pages/
 │   ├── produtos.html
 │   ├── sobre.html
-│   ├── servicos.html
+│   ├── index.html
 │   └── contato.html
 └── README.md
 ```
@@ -44,7 +44,6 @@ marcalMadeiras/
 - **Home**: Página inicial com apresentação da empresa e destaques
 - **Sobre**: História da empresa, missão, visão e valores
 - **Produtos**: Informações sobre os produtos oferecidos
-- **Serviços**: Descrição dos serviços prestados
 - **Contato**: Formulário de contato e informações como endereço e telefone
 
 ## 📱 Responsividade
