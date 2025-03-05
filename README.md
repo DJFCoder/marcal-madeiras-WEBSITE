@@ -20,22 +20,25 @@ O site da Marçal Madeiras é uma página web estática desenvolvida para aprese
 marcalMadeiras/
 ├── index.html
 ├── css/
-│   ├── style.css
+│   ├── bootstrap.min.5.3.css
 │   └── bootstrap.min.css
+│   └── buttonSaibaMais.css
+│   └── lightbox.min.css
+│   └── style.css
 ├── sass/
 |   ├── style.scss
 |   └── style.css.map
 ├── js/
-│   ├── main.js
-│   ├── jquery.min.js
-│   └── bootstrap.min.js
+│   ├── bootstrap.bundle.min.js
+│   ├── lightbox-plus-jquery.min.js
+│   └── script.js
 ├── img/
 |   ├── close.png
 |   └── loading.gif
 |   └── next.png
 |   └── prev.png
 ├── images/
-│   ├── logos.png
+│   ├── logos_and_assets.png
 │   ├── gallery/jpg/
 ├── pages/
 │   ├── produtos.html
