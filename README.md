@@ -22,15 +22,21 @@ marcalMadeiras/
 ├── css/
 │   ├── style.css
 │   └── bootstrap.min.css
+├── sass/
+|   ├── style.scss
+|   └── style.css.map
 ├── js/
 │   ├── main.js
 │   ├── jquery.min.js
 │   └── bootstrap.min.js
+├── img/
+|   ├── close.png
+|   └── loading.gif
+|   └── next.png
+|   └── prev.png
 ├── images/
-│   ├── logo.png
-│   ├── produtos/
-│   ├── banner/
-│   └── galeria/
+│   ├── logos.png
+│   ├── gallery/jpg/
 ├── pages/
 │   ├── produtos.html
 │   ├── sobre.html
