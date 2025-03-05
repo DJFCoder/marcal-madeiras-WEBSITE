@@ -18,7 +18,6 @@ O site da Marçal Madeiras é uma página web estática desenvolvida para aprese
 
 ```
 marcalMadeiras/
-├── index.html
 ├── css/
 │   ├── bootstrap.min.5.3.css
 │   └── bootstrap.min.css
